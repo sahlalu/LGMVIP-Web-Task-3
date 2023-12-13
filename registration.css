@@ -1,0 +1,136 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+header {
+  background-color: #333;
+  text-align: center;
+  width: 100%;
+}
+
+#container-wrapper {
+  display: flex;
+  align-items: flex-start;
+  margin: 10px 0;
+  justify-content: space-between;
+}
+
+#form-container {
+  background-color: #ffffff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  width: 30%;
+  margin-left: 50px;
+  height: fit-content;
+}
+
+#registration-form {
+  justify-content: center;
+  padding: 20px;
+}
+
+h2 {
+  color: white;
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+  font-size: 25px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: black;
+  font-weight: bold;
+}
+
+input,
+button {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 18px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #f9f9f9;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  width: auto;
+  margin-right: 5px;
+}
+
+#display-container {
+  flex-shrink: 0;
+  width: 50%;
+  margin-right: 5%;
+}
+
+#image-link img {
+  aspect-ratio: 1/1;
+  max-width: 150px;
+  max-height: 150px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+#display-content {
+  margin-top: 20px;
+}
+
+#display-content > div {
+  width: 75%;
+  margin-bottom: 20px;
+  margin-left: 10%;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#skills {
+  display: flex;
+  justify-content: space-around;
+}
+
+#student-data {
+  display: flex;
+  align-items: flex-start;
+  margin: 10px 0;
+  justify-content: space-between;
+}
+
+#flex-container {
+  height: fit-content;
+}
+
+#gender {
+  display: flex;
+}
+
+#female {
+  flex-shrink: 1;
+  margin-left: 100px;
+}
+
+button {
+  margin-top: 10px;
+  background-color: orangered;
+  color: #fff;
+  display: inline-block;
+  margin-right: 30px;
+  cursor: pointer;
+  width: 30%;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: red;
+}

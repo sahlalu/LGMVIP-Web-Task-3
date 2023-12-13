@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="registration.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h2>Student Registration Form</h2>
+    </header>
+    <div id="container-wrapper">
+      <div id="form-container">
+        <form id="registration-form">
+          <h3>Fill The Details</h3>
+
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required /><br />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required /><br />
+
+          <label>Gender:</label>
+          <div id="gender">
+            <label>
+              <input type="radio" id="male" name="gender" value="Male" />
+              Male
+            </label>
+            <label>
+              <input type="radio" id="female" name="gender" value="Female" />
+              Female
+            </label>
+          </div>
+
+          <label for="website">Website:</label>
+          <input type="url" id="website" name="website" required /><br />
+
+          <label for="image">Image Link:</label>
+          <input type="url" id="image" name="image" required /><br />
+
+          <label>Skills:</label>
+          <div id="skills">
+            <label>
+              <input type="checkbox" id="html" name="skills" value="HTML" />
+              HTML</label>
+            <label>
+              <input type="checkbox" id="css" name="skills" value="CSS" />
+              CSS</label>
+            <label>
+              <input type="checkbox" id="javascript" name="skills" value="JavaScript" />
+              JavaScript</label>
+            <label>
+              <input type="checkbox" id="php" name="skills" value="Php" />
+              Php</label><br />
+          </div>
+
+          <button type="button" onclick="submitForm()">Submit</button>
+          <button type="button" onclick="clearForm()">Clear</button>
+        </form>
+      </div>
+
+      <div id="display-container">
+        <h3>Enrolled Students</h3>
+        <div id="display-content"></div>
+      </div>
+    </div>
+
+    <script src="registration.js"></script>
+  </body>
+</html>
